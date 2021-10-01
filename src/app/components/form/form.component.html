@@ -1,0 +1,54 @@
+<!-- <h2>Welcome</h2>
+    <button class="btn btn-primary">Press</button> -->
+<h1 mat-dialog-title>Update</h1>
+<div mat-dialog-content>
+  <form>
+    <div class="form-control">
+      <label for="text">Name</label>
+      <input
+        type="text"
+        name="text"
+        id="text"
+        [(ngModel)]="name"
+        placeholder="Name of the employee"
+      />
+    </div>
+    <div class="form-control">
+      <label for="day">Department</label>
+      <input
+        type="text"
+        id="text"
+        name="department"
+        [(ngModel)]="department"
+        placeholder="Department of the employee"
+      />
+    </div>
+    <div class="form-control">
+      <label for="day">Date of joining</label>
+      <input
+        type="text"
+        name="date"
+        [(ngModel)]="date"
+        id="text"
+        placeholder="Add Day "
+      />
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <input
+    type="submit"
+    class="btn"
+    value="Update"
+    [ngStyle]="{ background: 'rgb(18, 109, 228)' }"
+    (click)="onUpdate()"
+    mat-dialog-close
+  />
+  <button
+    class="btn"
+    [ngStyle]="{ background: 'rgb(255, 0, 0)' }"
+    mat-dialog-close
+  >
+    Close
+  </button>
+</div>

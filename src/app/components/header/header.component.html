@@ -1,0 +1,8 @@
+<h1>Employee Data</h1>
+<button
+  class="btn"
+  [ngStyle]="{ background: showClose ? 'red' : 'green' }"
+  (click)="toggleShow()"
+>
+  {{ showClose ? "Close" : "Add" }}
+</button>

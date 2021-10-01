@@ -1,0 +1,9 @@
+<app-add-employee
+  *ngIf="show"
+  (sendData)="onSendData($event)"
+></app-add-employee>
+<app-employee
+  *ngFor="let employee of employees"
+  [employee]="employee"
+  (DeleteEmployee)="onDelete(employee)"
+></app-employee>

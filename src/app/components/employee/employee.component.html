@@ -1,0 +1,12 @@
+<div class="employee" (dblclick)="openDialog()">
+  <h3>
+    {{ employee.name
+    }}<fa-icon
+      [ngStyle]="{ color: 'red' }"
+      [icon]="faTimes"
+      (click)="deleteEmployee(employee)"
+    ></fa-icon>
+  </h3>
+  <h5>{{ employee.department }}</h5>
+  <p>Date of Joining : {{ employee.joiningDate }}</p>
+</div>
